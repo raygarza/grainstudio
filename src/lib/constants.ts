@@ -10,19 +10,19 @@ export const SERVICES = [
   {
     number: "01",
     title: "Web Dev",
-    accent: "mustard",
+    accent: "mustard" as const,
     body: "Design + Dev - Every page designed for the feeling your business gives - not just what it sells. js for complex projects. WordPress or Squarespace for simpler ones. You pay once. You own it outright.",
   },
   {
     number: "03",
     title: "SEO",
-    accent: "ink",
+    accent: "ink" as const,
     body: "Built in from day one - fast load times, clean markup, and copy that earns rankings without paid ads.",
   },
    {
     number: "02",
     title: "35mm Film Shoots",
-    accent: "burnt",
+    accent: "burnt" as const,
     body: "Content shoots for your Business. Action, Portraits, and B-roll all on 35mm film.",
   },
 ];
