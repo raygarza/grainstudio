@@ -52,7 +52,6 @@ export function Services() {
                 background: "var(--paper-lift)",
                 border: "0.5px solid var(--ink-15)",
                 padding: "24px",
-                textAlign: "left",
               }}
             >
              

@@ -35,7 +35,7 @@ export function HeroPitch() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: 0 }}
             style={{
-              border: "0.5px solid var(--ink-30)",
+              border: "1px solid var(--ink-30)",
             }}
           >
             {/* Portrait Image */}
@@ -111,21 +111,19 @@ export function HeroPitch() {
                   className="uppercase font-sans transition-all duration-200"
                   style={{
                     width: "100%",
-                    padding: "10px",
-                    background: "transparent",
-                    border: "0.5px solid )",
-                    fontSize: "9px",
+                    padding: "12px",
+                    background: "var(--ink)",
+                    border: "none",
+                    fontSize: "11px",
                     letterSpacing: "0.14em",
-                    color: "var(--ink)",
+                    color: "var(--paper)",
                     cursor: "pointer",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "var(--ink)";
-                    e.currentTarget.style.color = "var(--paper)";
+                    e.currentTarget.style.opacity = "0.85";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "transparent";
-                    e.currentTarget.style.color = "var(--ink)";
+                    e.currentTarget.style.opacity = "1";
                   }}
                 >
                   Book a consultation

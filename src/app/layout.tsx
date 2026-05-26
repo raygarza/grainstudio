@@ -36,10 +36,11 @@ export default function RootLayout({
       <body>
         <div
           style={{
-            maxWidth: '1600px',
+            maxWidth: '95vw',
             marginInline: 'auto',
             paddingInline: 'var(--page-padding)',
           }}
+          className="md:max-w-[1600px]"
         >
           {children}
         </div>
