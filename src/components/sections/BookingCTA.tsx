@@ -14,7 +14,8 @@ export function BookingCTA() {
       <div
         className="text-center"
         style={{
-          background: "var(--paper-light)",
+          background: "var(--paper-lift)",
+          border: "0.5px solid var(--ink-15)",
           padding: "clamp(48px, 8vw, 80px) clamp(24px, 5vw, 48px)",
         }}
       >

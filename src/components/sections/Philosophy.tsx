@@ -29,6 +29,18 @@ export function Philosophy() {
                 }}
               >
                 <div style={{ display: "block" }}>Minimal. Fast.</div>
+              </div>
+              <div
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  // fontStyle: "italic",
+                  paddingTop: "10px",
+                  fontWeight: 800,
+                  fontSize: "clamp(28px, 4vw, 60px)",
+                  lineHeight: "1.05",
+                  color: "var(--ink)",
+                }}
+              >
                 <div style={{ display: "block" }}>Yours.</div>
               </div>
             </div>

@@ -49,7 +49,8 @@ export function Services() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               style={{
-                border: "0.5px solid var(--ink-30)",
+                background: "var(--paper-lift)",
+                border: "0.5px solid var(--ink-15)",
                 padding: "24px",
                 textAlign: "center",
               }}
