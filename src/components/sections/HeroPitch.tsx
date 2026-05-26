@@ -66,7 +66,7 @@ export function HeroPitch() {
                   className="font-serif italic"
                   style={{
                     fontSize: "16px",
-                    lineHeight: "1.65",
+                    lineHeight: "1.8",
                     color: "var(--ink)",
                   }}
                 >
@@ -182,8 +182,8 @@ export function HeroPitch() {
             <div
               className="font-serif"
               style={{
-                fontSize: "clamp(16px, 1.1vw, 16px)",
-                lineHeight: "1.85",
+                fontSize: "16px",
+                lineHeight: "1.8",
                 color: "var(--ink)",
                 marginTop: "16px",
               }}

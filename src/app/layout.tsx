@@ -34,14 +34,7 @@ export default function RootLayout({
       } as React.CSSProperties}
     >
       <body>
-        <div
-          style={{
-            maxWidth: '95vw',
-            marginInline: 'auto',
-            paddingInline: 'var(--page-padding)',
-          }}
-          className="md:max-w-[1600px]"
-        >
+        <div className="page-wrapper">
           {children}
         </div>
       </body>

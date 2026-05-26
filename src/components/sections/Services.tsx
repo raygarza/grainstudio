@@ -89,8 +89,8 @@ export function Services() {
               <p
                 className="font-sans"
                 style={{
-                  fontSize: "13px",
-                  lineHeight: "1.7",
+                  fontSize: "16px",
+                  lineHeight: "1.8",
                   color: "var(--ink-60)",
                 }}
               >

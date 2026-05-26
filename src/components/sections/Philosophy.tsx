@@ -38,8 +38,8 @@ export function Philosophy() {
             <p
               style={{
                 fontFamily: "var(--font-serif)",
-                fontSize: "15px",
-                lineHeight: "1.85",
+                fontSize: "16px",
+                lineHeight: "1.8",
                 color: "var(--ink)",
                 opacity: 0.85,
               }}
@@ -61,8 +61,8 @@ export function Philosophy() {
                 className="font-sans"
                 style={{
                   fontWeight: 500,
-                  fontSize: "14px",
-                  lineHeight: "1.6",
+                  fontSize: "16px",
+                  lineHeight: "1.8",
                   color: "var(--ink)",
                 }}
               >

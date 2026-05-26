@@ -67,24 +67,37 @@ export function Pricing() {
                 marginBottom: "32px",
               }}
             />
-            <ul
+            <div
               className="font-sans"
               style={{
                 fontSize: "16px",
-                lineHeight: "2",
+                lineHeight: "1.8",
                 color: "var(--ink)",
                 textAlign: "left",
-                listStyleType: "disc",
-                paddingLeft: "20px",
                 marginBottom: "32px",
               }}
             >
-              <li>Custom design from scratch</li>
-              <li>Fully responsive (mobile, tablet, desktop)</li>
-              <li>SEO-ready structure and metadata</li>
-              <li>No monthly fees. It's yours</li>
-              <li>2 rounds of revisions</li>
-            </ul>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>Custom design from scratch</span>
+              </div>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>Fully responsive (mobile, tablet, desktop)</span>
+              </div>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>SEO-ready structure and metadata</span>
+              </div>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>No monthly fees. It's yours</span>
+              </div>
+              <div style={{ display: "flex", gap: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>2 rounds of revisions</span>
+              </div>
+            </div>
           </div>
 
           {/* CARD 02 - SEO */}
@@ -123,29 +136,42 @@ export function Pricing() {
                 marginBottom: "32px",
               }}
             />
-            <ul
+            <div
               className="font-sans"
               style={{
                 fontSize: "16px",
-                lineHeight: "2",
+                lineHeight: "1.8",
                 color: "rgba(245,240,232,0.85)",
                 textAlign: "left",
-                listStyleType: "disc",
-                paddingLeft: "20px",
                 marginBottom: "24px",
               }}
             >
-              <li>Current website audit and assessment</li>
-              <li>On-page optimization and technical SEO</li>
-              <li>Content strategy and keyword research</li>
-              <li>Monthly reporting and adjustments</li>
-              <li>Google Analytics 4 integration</li>
-            </ul>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>Current website audit and assessment</span>
+              </div>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>On-page optimization and technical SEO</span>
+              </div>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>Content strategy and keyword research</span>
+              </div>
+              <div style={{ display: "flex", gap: "8px", marginBottom: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>Monthly reporting and adjustments</span>
+              </div>
+              <div style={{ display: "flex", gap: "8px" }}>
+                <span style={{ color: "var(--mustard)", flexShrink: 0 }}>✦</span>
+                <span>Google Analytics 4 integration</span>
+              </div>
+            </div>
             <p
               className="font-sans"
               style={{
                 fontSize: "12px",
-                lineHeight: "1.6",
+                lineHeight: "1.8",
                 color: "rgba(245,240,232,0.6)",
                 fontStyle: "italic",
                 textAlign: "left",

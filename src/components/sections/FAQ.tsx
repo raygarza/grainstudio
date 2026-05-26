@@ -85,27 +85,27 @@ export function FAQ() {
                   />
                 )}
                 <div style={{ marginBottom: "24px" }}>
-                  <p
+                  <h3
                     className="font-serif"
                     style={{
-                      fontSize: "18px",
+                      fontSize: "20px",
                       fontWeight: 600,
                       color: "var(--ink)",
                       marginBottom: "12px",
                     }}
                   >
-                    Q: {faq.q}
-                  </p>
+                    {faq.q}
+                  </h3>
                   <p
                     className="font-serif"
                     style={{
-                      fontSize: "15px",
-                      lineHeight: "1.75",
+                      fontSize: "16px",
+                      lineHeight: "1.8",
                       color: "var(--ink-60)",
                       marginBottom: "0",
                     }}
                   >
-                    A: {faq.a}
+                    {faq.a}
                   </p>
                 </div>
               </div>
