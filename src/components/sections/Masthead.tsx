@@ -1,6 +1,7 @@
 "use client";
 
 import { HorizontalRule } from "@/components/ui/HorizontalRule";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { SITE } from "@/lib/constants";
 
 export function Masthead() {
@@ -25,16 +26,19 @@ export function Masthead() {
           {SITE.city} · Web Studio
         </div>
         <div
-          className="uppercase font-sans text-[12px] tracking-[0.12em]"
-          style={{ color: "var(--ink-60)" }}
-        >
-          Est. 2026
-        </div>
-        <div
           className="uppercase font-sans text-[12px] tracking-[0.12em] hidden md:block"
           style={{ color: "var(--ink-60)" }}
         >
           No subscriptions. No lock-in.
+        </div>
+        <div className="flex items-center">
+          <div
+            className="uppercase font-sans text-[12px] tracking-[0.12em]"
+            style={{ color: "var(--ink-60)" }}
+          >
+            Est. 2026
+          </div>
+          <SocialLinks />
         </div>
       </div>
 

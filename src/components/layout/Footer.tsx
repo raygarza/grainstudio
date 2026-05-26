@@ -1,4 +1,5 @@
 import { HorizontalRule } from "@/components/ui/HorizontalRule";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import { SITE } from "@/lib/constants";
 
 export function Footer() {
@@ -15,12 +16,15 @@ export function Footer() {
         >
           {SITE.name}
         </p>
-        <p
-          className="uppercase font-sans text-[12px] tracking-[0.12em]"
-          style={{ color: "var(--ink-60)" }}
-        >
-          {SITE.established}
-        </p>
+        <div className="flex items-center">
+          <p
+            className="uppercase font-sans text-[12px] tracking-[0.12em]"
+            style={{ color: "var(--ink-60)" }}
+          >
+            {SITE.established}
+          </p>
+          <SocialLinks />
+        </div>
       </div>
     </footer>
   );
