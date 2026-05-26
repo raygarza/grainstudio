@@ -28,8 +28,7 @@ export function Philosophy() {
                   color: "var(--ink)",
                 }}
               >
-                <div style={{ display: "block" }}>Minimal.</div>
-                <div style={{ display: "block" }}>Fast.</div>
+                <div style={{ display: "block" }}>Minimal. Fast.</div>
                 <div style={{ display: "block" }}>Yours.</div>
               </div>
             </div>

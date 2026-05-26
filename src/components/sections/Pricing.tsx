@@ -32,7 +32,7 @@ export function Pricing() {
           style={{ gap: "1px", background: "var(--ink-15)" }}
         >
           {/* CARD 01 - Light */}
-          <div style={{ background: "var(--paper)", padding: "32px 28px" }}>
+          <div style={{ background: "var(--paper-light)", padding: "32px 28px" }}>
             <p
               className="uppercase font-sans"
               style={{

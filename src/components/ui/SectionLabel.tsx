@@ -5,8 +5,14 @@ interface SectionLabelProps {
 export function SectionLabel({ children }: SectionLabelProps) {
   return (
     <p
-      className="uppercase font-sans text-[9px] text-center tracking-[0.12em]"
-      style={{ color: "var(--ink-60)" }}
+      className="uppercase font-sans text-center"
+      style={{
+        fontSize: "11px",
+        letterSpacing: "0.16em",
+        fontWeight: 500,
+        color: "var(--ink-60)",
+        marginBottom: "12px",
+      }}
     >
       {children}
     </p>

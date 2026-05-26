@@ -1,7 +1,7 @@
 export const SITE = {
   name: "GRAIN STUDIO",
   city: "Austin, TX",
-  tagline: "Web Dev · SEO · 35mm Shoots",
+  tagline: "Web Dev  //  SEO  //  35mm Shoots",
   established: "Est. 2026",
   calLink: "your-cal-link", // your Cal.com username/event
 };

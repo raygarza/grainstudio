@@ -1,15 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { SERVICES } from "@/lib/constants";
 import type { Service } from "@/types";
 
-const accentColors = {
-  mustard: "var(--mustard)",
-  burnt: "var(--burnt)",
-  ink: "var(--ink)",
-};
+const serviceImages = [
+  "/placeholder-webdev.jpg",
+  "/placeholder-seo.jpg",
+  "/placeholder-film.jpg",
+];
 
 export function Services() {
   return (
@@ -21,19 +22,25 @@ export function Services() {
         {/* Section headline */}
         <h2
           className="font-serif font-semibold text-center text-[32px]"
-          style={{ color: "var(--ink)", marginTop: "12px", marginBottom: "16px" }}
+          style={{ color: "var(--ink)", marginTop: "12px", marginBottom: "32px" }}
         >
           What I Build
         </h2>
 
-        {/* Service grid with hairline dividers */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-3"
-          style={{
-            gap: "1px",
-            background: "var(--ink-15)",
-          }}
-        >
+        {/* Service grid */}
+        <style jsx>{`
+          .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+          }
+          @media (min-width: 768px) {
+            .services-grid {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+        `}</style>
+        <div className="services-grid">
           {SERVICES.map((service: Service, index: number) => (
             <motion.div
               key={service.number}
@@ -42,40 +49,48 @@ export function Services() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               style={{
-                background: "var(--paper)",
-                padding: "20px 18px 18px",
+                border: "0.5px solid var(--ink-30)",
+                padding: "24px",
+                textAlign: "center",
               }}
             >
-              {/* Service number */}
-              <p
-                className="uppercase font-sans text-[9px]"
-                style={{ color: "var(--ink-30)", marginBottom: "8px" }}
-              >
-                {service.number}
-              </p>
-
-              {/* Accent bar */}
-              <div
-                style={{
-                  width: "20px",
-                  height: "1.5px",
-                  background: accentColors[service.accent],
-                  marginBottom: "10px",
-                }}
-              />
+              {/* Service Image */}
+              <div style={{ width: "100%", aspectRatio: "3/2", overflow: "hidden", marginBottom: "20px" }}>
+                <Image
+                  src={serviceImages[index]}
+                  alt={service.title}
+                  width={300}
+                  height={200}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                    filter: "grayscale(100%)",
+                  }}
+                />
+              </div>
 
               {/* Title */}
               <h3
-                className="font-serif font-semibold text-[20px]"
-                style={{ color: "var(--ink)" }}
+                className="font-serif font-semibold"
+                style={{
+                  color: "var(--ink)",
+                  fontSize: "clamp(24px, 2.5vw, 28px)",
+                  marginBottom: "16px",
+                }}
               >
                 {service.title}
               </h3>
 
               {/* Body */}
               <p
-                className="font-sans text-[11px]"
-                style={{ lineHeight: "1.7", color: "var(--ink-60)", marginTop: "10px" }}
+                className="font-sans"
+                style={{
+                  fontSize: "13px",
+                  lineHeight: "1.7",
+                  color: "var(--ink-60)",
+                }}
               >
                 {service.body}
               </p>

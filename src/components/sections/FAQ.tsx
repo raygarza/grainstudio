@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { FAQS } from "@/lib/constants";
@@ -6,9 +8,31 @@ export function FAQ() {
   return (
     <section id="faq">
       <div className="px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-12 md:gap-16 items-start">
+        <style jsx>{`
+          .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: flex-start;
+          }
+          @media (min-width: 768px) {
+            .faq-container {
+              flex-direction: row;
+              gap: 64px;
+            }
+            .faq-left {
+              flex: 1 1 0%;
+              min-width: 0;
+            }
+            .faq-right {
+              flex: 2 1 0%;
+              min-width: 0;
+            }
+          }
+        `}</style>
+        <div className="faq-container">
           {/* LEFT COLUMN */}
-          <div>
+          <div className="faq-left">
             <SectionLabel>Common Inquiries</SectionLabel>
             <div
               className="font-serif"
@@ -35,12 +59,20 @@ export function FAQ() {
                 display: "block",
                 filter: "grayscale(100%) contrast(1.1)",
                 opacity: 0.75,
+                marginTop: "8px",
+                marginBottom: "24px",
               }}
-            />
+            /><div
+                    style={{
+                      height: "0.5px",
+                      background: "var(--ink-15)",
+                      marginBottom: "24px",
+                    }}
+                  />
           </div>
 
           {/* RIGHT COLUMN */}
-          <div>
+          <div className="faq-right">
             {FAQS.map((faq, index) => (
               <div key={index}>
                 {index > 0 && (

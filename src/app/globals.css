@@ -8,6 +8,7 @@
   --ink-30:      #1a18144d;
   --ink-15:      #1a181426;
   --paper:       #f5f0e8;
+  --paper-light: #faf8f4;
   --paper-dark:  #ede8dc;
   --mustard:     #c9a84c;
   --burnt:       #b85c2c;
@@ -52,7 +53,7 @@ a:hover {
 }
 
 section {
-  padding-block: clamp(40px, 6vw, 72px);
+  padding-block: clamp(24px, 4vw, 48px);
 }
 
 section:first-of-type {

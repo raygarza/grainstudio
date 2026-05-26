@@ -5,15 +5,21 @@ export function Footer() {
   return (
     <footer className="w-full px-6 md:px-12">
       <HorizontalRule weight="thin" />
-      <div className="flex justify-between items-center py-4">
-        <p className="font-serif font-semibold text-[16px]" style={{ color: "var(--ink)" }}>
+      <div
+        className="flex justify-between items-center"
+        style={{ padding: "28px 0" }}
+      >
+        <p
+          className="uppercase font-sans text-[12px] tracking-[0.12em]"
+          style={{ color: "var(--ink-60)" }}
+        >
           {SITE.name}
         </p>
         <p
-          className="uppercase font-sans text-[9px] tracking-[0.12em]"
+          className="uppercase font-sans text-[12px] tracking-[0.12em]"
           style={{ color: "var(--ink-60)" }}
         >
-          {SITE.city}
+          {SITE.established}
         </p>
       </div>
     </footer>

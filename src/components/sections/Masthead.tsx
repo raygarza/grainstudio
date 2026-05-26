@@ -16,7 +16,7 @@ export function Masthead() {
       {/* Meta bar */}
       <div
         className="flex justify-between items-center px-6 md:px-12"
-        style={{ padding: "10px 0" }}
+        style={{ padding: "16px 0" }}
       >
         <div
           className="uppercase font-sans text-[12px] tracking-[0.12em]"
@@ -39,7 +39,7 @@ export function Masthead() {
       </div>
 
       {/* Top padding before bold rule */}
-      <div style={{ paddingTop: "16px" }} />
+      <div style={{ paddingTop: "8px" }} />
 
       {/* Thick rule */}
       <HorizontalRule weight="bold" />
@@ -63,7 +63,7 @@ export function Masthead() {
       <HorizontalRule weight="thin" />
 
       {/* Tagline */}
-      <div style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+      <div style={{ paddingTop: "12px", paddingBottom: "12px" }}>
         <p
           className="uppercase font-sans text-[12px] text-center tracking-[0.3em]"
           style={{ color: "var(--ink-60)" }}
