@@ -17,14 +17,14 @@ export function Services() {
     <section id="services" className="w-full px-6 md:px-12">
       <div style={{ paddingTop: "32px" }}>
         {/* Section label */}
-        <SectionLabel>The Editorial Offerings</SectionLabel>
+        {/* <SectionLabel>My Services</SectionLabel> */}
 
         {/* Section headline */}
         <h2
           className="font-serif font-semibold text-center text-[32px]"
           style={{ color: "var(--ink)", marginTop: "12px", marginBottom: "32px" }}
         >
-          What I Build
+          What I Offer
         </h2>
 
         {/* Service grid */}
@@ -52,10 +52,24 @@ export function Services() {
                 background: "var(--paper-lift)",
                 border: "0.5px solid var(--ink-15)",
                 padding: "24px",
-                textAlign: "center",
+                textAlign: "left",
               }}
             >
-              {/* Service Image */}
+             
+
+              {/* Title */}
+              <h3
+                className="font-serif font-semibold"
+                style={{
+                  color: "var(--ink)",
+                  fontSize: "clamp(24px, 2.5vw, 28px)",
+                  marginBottom: "16px",
+                }}
+              >
+                {service.title}
+              </h3>
+
+               {/* Service Image */}
               <div style={{ width: "100%", aspectRatio: "3/2", overflow: "hidden", marginBottom: "20px" }}>
                 <Image
                   src={serviceImages[index]}
@@ -71,18 +85,6 @@ export function Services() {
                   }}
                 />
               </div>
-
-              {/* Title */}
-              <h3
-                className="font-serif font-semibold"
-                style={{
-                  color: "var(--ink)",
-                  fontSize: "clamp(24px, 2.5vw, 28px)",
-                  marginBottom: "16px",
-                }}
-              >
-                {service.title}
-              </h3>
 
               {/* Body */}
               <p

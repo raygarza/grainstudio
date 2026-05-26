@@ -31,13 +31,12 @@ export default function RootLayout({
       className={`${cormorant.variable} ${dmSans.variable}`}
       style={{
         '--page-padding': 'clamp(24px, 6vw, 96px)',
-        '--page-max': '80vw',
       } as React.CSSProperties}
     >
       <body>
         <div
           style={{
-            maxWidth: 'var(--page-max)',
+            maxWidth: '1600px',
             marginInline: 'auto',
             paddingInline: 'var(--page-padding)',
           }}

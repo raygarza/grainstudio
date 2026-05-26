@@ -13,24 +13,33 @@ export function Pricing() {
       <div className="px-6 md:px-12">
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <SectionLabel>The Investment</SectionLabel>
+          <SectionLabel>Your Investment</SectionLabel>
         </div>
 
         {/* Card Grid */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2"
-          style={{ gap: "24px" }}
-        >
+        <style jsx>{`
+          .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+          }
+          @media (min-width: 768px) {
+            .pricing-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+        `}</style>
+        <div className="pricing-grid">
           {/* CARD 01 - Website */}
           <div
             style={{
               background: "var(--paper-lift)",
               border: "0.5px solid var(--ink-15)",
               padding: "40px",
-              textAlign: "center",
+              textAlign: "left",
             }}
           >
-            <h3
+            <h4
               className="font-serif"
               style={{
                 fontSize: "clamp(32px, 4vw, 42px)",
@@ -39,8 +48,8 @@ export function Pricing() {
                 marginBottom: "16px",
               }}
             >
-              Website
-            </h3>
+              Website Build
+            </h4>
             <p
               className="font-serif"
               style={{
@@ -61,7 +70,7 @@ export function Pricing() {
             <ul
               className="font-sans"
               style={{
-                fontSize: "14px",
+                fontSize: "16px",
                 lineHeight: "2",
                 color: "var(--ink)",
                 textAlign: "left",
@@ -83,10 +92,10 @@ export function Pricing() {
             style={{
               background: "var(--ink)",
               padding: "40px",
-              textAlign: "center",
+              textAlign: "left",
             }}
           >
-            <h3
+            <h4
               className="font-serif"
               style={{
                 fontSize: "clamp(32px, 4vw, 42px)",
@@ -95,8 +104,8 @@ export function Pricing() {
                 marginBottom: "16px",
               }}
             >
-              SEO
-            </h3>
+              SEO Architecture
+            </h4>
             <p
               className="font-serif"
               style={{
@@ -117,7 +126,7 @@ export function Pricing() {
             <ul
               className="font-sans"
               style={{
-                fontSize: "14px",
+                fontSize: "16px",
                 lineHeight: "2",
                 color: "rgba(245,240,232,0.85)",
                 textAlign: "left",
