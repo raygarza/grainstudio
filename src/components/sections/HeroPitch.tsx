@@ -153,7 +153,7 @@ export function HeroPitch() {
               Your business website should feel like you -{" "}
               <span
                 style={{
-                  background: "linear-gradient(180deg, transparent 60%, var(--mustard) 40%, var(--mustard) 85%, transparent 85%)",
+                  background: "linear-gradient(180deg, transparent 60%, var(--burnt) 40%, var(--burnt) 85%, transparent 85%)",
                   paddingInline: "4px",
                 }}
               >
