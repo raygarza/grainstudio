@@ -50,7 +50,7 @@ export function Masthead() {
       <HorizontalRule weight="bold" />
 
       {/* Studio name */}
-      <div style={{ paddingTop: "14px", paddingBottom: "12px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <div style={{ paddingTop: "10px", paddingBottom: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
         <Image
           src="/title_logo.png"
           alt={SITE.name}
