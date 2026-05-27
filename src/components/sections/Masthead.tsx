@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { HorizontalRule } from "@/components/ui/HorizontalRule";
 import { SocialLinks } from "@/components/ui/SocialLinks";
 import { SITE } from "@/lib/constants";
@@ -49,18 +50,19 @@ export function Masthead() {
       <HorizontalRule weight="bold" />
 
       {/* Studio name */}
-      <div style={{ paddingTop: "14px", paddingBottom: "12px" }}>
-        <h1
-          className="font-serif font-semibold text-center uppercase px-6 md:whitespace-nowrap"
+      <div style={{ paddingTop: "14px", paddingBottom: "12px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Image
+          src="/title_logo.png"
+          alt={SITE.name}
+          width={800}
+          height={200}
+          priority
           style={{
-            fontSize: "clamp(48px, 9vw, 96px)",
-            lineHeight: "0.92",
-            letterSpacing: "0.04em",
-            color: "var(--ink)",
+            width: "clamp(300px, 70vw, 800px)",
+            height: "auto",
+            display: "block",
           }}
-        >
-          {SITE.name}
-        </h1>
+        />
       </div>
 
       {/* Thin rule */}
