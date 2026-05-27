@@ -20,10 +20,16 @@ export function HeroPitch() {
             gap: 32px;
             align-items: start;
           }
+          .mobile-hide {
+            display: block;
+          }
           @media (min-width: 768px) {
             .hero-grid {
               grid-template-columns: 2fr 3fr;
               gap: 48px;
+            }
+            .mobile-hide {
+              display: none;
             }
           }
         `}</style>
@@ -54,7 +60,7 @@ export function HeroPitch() {
             />
 
             {/* Pull Quote */}
-            <div>
+            <div className="mobile-hide">
               <div
                 style={{
                   height: "0.5px",
@@ -66,7 +72,7 @@ export function HeroPitch() {
                 <p
                   className="font-serif"
                   style={{
-                    fontSize: "16px",
+                    fontSize: "18px",
                     lineHeight: "1.8",
                     color: "var(--ink)",
                   }}
@@ -88,7 +94,7 @@ export function HeroPitch() {
             </div>
 
             {/* CTA Area */}
-            <div>
+            <div className="mobile-hide">
               <div
                 style={{
                   height: "0.5px",
@@ -184,7 +190,7 @@ export function HeroPitch() {
             <div
               className="font-serif"
               style={{
-                fontSize: "16px",
+                fontSize: "18px",
                 lineHeight: "1.8",
                 color: "var(--ink-60)",
                 marginTop: "16px",

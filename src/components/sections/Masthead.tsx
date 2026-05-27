@@ -58,7 +58,7 @@ export function Masthead() {
           height={200}
           priority
           style={{
-            width: "clamp(300px, 70vw, 800px)",
+            width: "clamp(350px, 70vw, 800px)",
             height: "auto",
             display: "block",
           }}

@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { HorizontalRule } from "@/components/ui/HorizontalRule";
 import { NAV_LINKS } from "@/lib/constants";
 
 export function Navigation() {
   return (
-    <section id="navigation" style={{ padding: "clamp(32px, 5vw, 56px) 0" }}>
+    <section id="navigation" style={{ padding: "clamp(20px, 5vw, 20px) 0", borderTop: "none" }}>
       <style jsx>{`
         .nav-links {
           justify-content: center;
@@ -18,7 +19,22 @@ export function Navigation() {
           }
         }
       `}</style>
-      <div className="px-6 md:px-12" style={{ textAlign: "center" }}>
+      <div className="px-0 md:px-0" style={{ textAlign: "center" }}>
+        <Image
+          src="/idea-build-complete.png"
+          alt="Idea, Build, Complete"
+          width={800}
+          height={200}
+          style={{
+            width: "100%",
+            maxWidth: "1000px",
+            height: "auto",
+            display: "block",
+            margin: "0 auto",
+          }}
+        />
+        {/* <HorizontalRule weight="thin" />
+        <div style={{ marginTop: "24px" }} />
         <p
           className="uppercase font-sans"
           style={{
@@ -31,7 +47,6 @@ export function Navigation() {
         >
           Navigate
         </p>
-        {/* <HorizontalRule weight="thin" /> */}
         <nav style={{ padding: "12px 0" }}>
           <ul
             style={{
@@ -68,8 +83,7 @@ export function Navigation() {
               </li>
             ))}
           </ul>
-        </nav>
-        {/* <HorizontalRule weight="thin" /> */}
+        </nav> */}
       </div>
     </section>
   );
