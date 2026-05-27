@@ -63,7 +63,7 @@ export function HeroPitch() {
               />
               <div style={{ padding: "14px 16px" }}>
                 <p
-                  className="font-serif italic"
+                  className="font-serif"
                   style={{
                     fontSize: "16px",
                     lineHeight: "1.8",
@@ -75,7 +75,7 @@ export function HeroPitch() {
                 <p
                   className="uppercase font-sans"
                   style={{
-                    fontSize: "9px",
+                    fontSize: "10px",
                     color: "var(--ink-50)",
                     marginTop: "8px",
                     letterSpacing: "0.14em",
@@ -98,9 +98,9 @@ export function HeroPitch() {
               <p
                 className="uppercase font-sans text-center"
                 style={{
-                  fontSize: "9px",
-                  color: "var(--ink-50)",
-                  padding: "10px 16px 6px",
+                  fontSize: "12px",
+                  color: "var(--ink-60)",
+                  padding: "20px 16px 10px",
                 }}
               >
                 Ready to start?
@@ -111,13 +111,14 @@ export function HeroPitch() {
                   className="uppercase font-sans transition-all duration-200"
                   style={{
                     width: "100%",
-                    padding: "12px",
+                    padding: "16px",
                     background: "var(--ink)",
                     border: "none",
-                    fontSize: "11px",
+                    fontSize: "13px",
                     letterSpacing: "0.14em",
                     color: "var(--paper)",
                     cursor: "pointer",
+                    fontFamily: "var(--font-sans)",
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.opacity = "0.85";
@@ -126,7 +127,7 @@ export function HeroPitch() {
                     e.currentTarget.style.opacity = "1";
                   }}
                 >
-                  Book a consultation
+                  Book a 30 min Call
                 </button>
               </div>
             </div>
@@ -184,7 +185,7 @@ export function HeroPitch() {
               style={{
                 fontSize: "16px",
                 lineHeight: "1.8",
-                color: "var(--ink)",
+                color: "var(--ink-60)",
                 marginTop: "16px",
               }}
             >
@@ -195,7 +196,7 @@ export function HeroPitch() {
                 Your website is usually the first thing a potential client sees before they ever walk through your door. It should feel like walking in already - the vibe, the trust, the reason to choose you over the next name on the list.
               </p>
               <p style={{ marginBottom: "1.4em" }}>
-                I build websites for chiropractors, therapists, photographers, and small Austin businesses that have outgrown templates but don't need a $20k agency. Every project is designed from scratch around your brand, built fast, and handed to you outright - no subscriptions, no monthly platform fees, no lock-in.
+                I build websites for small Austin businesses that have outgrown templates, but don't need a $20k agency. Every project is designed from scratch around your brand, built fast, and handed to you outright - no subscriptions, no monthly platform fees, no lock-in.
               </p>
               <p>
                 Next.js for complex projects. Custom WordPress or Squarespace for simpler ones. Either way, you pay once and own it forever. Minimal, fast, and built to last - exactly like the business behind it.

@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${dmSans.variable}`}
       style={{
-        '--page-padding': 'clamp(24px, 6vw, 96px)',
+        '--page-padding': 'clamp(16px, 6vw, 96px)',
       } as React.CSSProperties}
     >
       <body>

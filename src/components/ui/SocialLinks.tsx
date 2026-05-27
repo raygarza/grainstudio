@@ -1,13 +1,13 @@
 export function SocialLinks() {
   return (
     <>
-      <span style={{ color: "var(--ink-60)", margin: "0 10px" }}>|</span>
+      <span style={{ color: "var(--ink-60)", margin: "0 8px" }}>|</span>
       <a
         href="#"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block p-2"
-        style={{ color: "var(--ink-60)", marginRight: "2px" }}
+        style={{ color: "var(--ink-60)", marginRight: "8px" }}
         aria-label="Instagram"
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

@@ -51,9 +51,9 @@ export function Masthead() {
       {/* Studio name */}
       <div style={{ paddingTop: "14px", paddingBottom: "12px" }}>
         <h1
-          className="font-serif font-semibold text-center uppercase px-6"
+          className="font-serif font-semibold text-center uppercase px-6 md:whitespace-nowrap"
           style={{
-            fontSize: "clamp(56px, 10vw, 120px)",
+            fontSize: "clamp(48px, 9vw, 96px)",
             lineHeight: "0.92",
             letterSpacing: "0.04em",
             color: "var(--ink)",

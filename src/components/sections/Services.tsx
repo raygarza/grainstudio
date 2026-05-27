@@ -13,6 +13,12 @@ const serviceImages = [
 ];
 
 export function Services() {
+  
+  const handleBookCall = () => {
+    // TODO: Replace with actual Cal.com integration when calLink is configured
+    alert("Cal.com booking modal would open here. Update SITE.calLink in constants.ts with your Cal.com username/event.");
+  };
+
   return (
     <section id="services" className="w-full px-6 md:px-12">
       <div style={{ paddingTop: "32px" }}>
@@ -20,12 +26,9 @@ export function Services() {
         {/* <SectionLabel>My Services</SectionLabel> */}
 
         {/* Section headline */}
-        <h2
-          className="font-serif font-semibold text-center text-[32px]"
-          style={{ color: "var(--ink)", marginTop: "12px", marginBottom: "32px" }}
-        >
-          What I Offer
-        </h2>
+         <div style={{ textAlign: "center", marginBottom: "40px" }}>
+          <SectionLabel>Services I Offer</SectionLabel>
+        </div>
 
         {/* Service grid */}
         <style jsx>{`
@@ -52,6 +55,8 @@ export function Services() {
                 background: "var(--paper-lift)",
                 border: "0.5px solid var(--ink-15)",
                 padding: "24px",
+                display: "flex",
+                flexDirection: "column",
               }}
             >
              
@@ -92,10 +97,39 @@ export function Services() {
                   fontSize: "16px",
                   lineHeight: "1.8",
                   color: "var(--ink-60)",
+                  marginBottom: "40px",
+                  flex: 1,
                 }}
               >
                 {service.body}
               </p>
+              <button
+                onClick={handleBookCall}
+                className="font-sans uppercase"
+                style={{
+                  padding: "14px 28px",
+                  border: "0.5px solid var(--ink-15)",
+                  letterSpacing: "0.16em",
+                  background: "transparent",
+                  color: "var(--ink)",
+                  fontSize: "12px",
+                  fontWeight: 500,
+                  cursor: "pointer",
+                  transition: "all 0.2s ease",
+                  width: "100%",
+                  fontFamily: "var(--font-sans)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "var(--ink)";
+                  e.currentTarget.style.color = "var(--paper)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "transparent";
+                  e.currentTarget.style.color = "var(--ink)";
+                }}
+              >
+                {service.buttoncopy}
+              </button>
             </motion.div>
           ))}
         </div>

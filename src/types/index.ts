@@ -3,4 +3,5 @@ export interface Service {
   title: string;
   accent: "mustard" | "burnt" | "ink";
   body: string;
+  buttoncopy: string;
 }

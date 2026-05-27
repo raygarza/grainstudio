@@ -22,7 +22,7 @@ export function BookingCTA() {
         {/* Label */}
         <p
           style={{
-            fontSize: "9px",
+            fontSize: "12px",
             letterSpacing: "0.18em",
             textTransform: "uppercase",
             color: "var(--ink-60)",
@@ -37,7 +37,7 @@ export function BookingCTA() {
           style={{
             fontFamily: "var(--font-serif)",
             fontWeight: 600,
-            fontSize: "clamp(36px, 7vw, 56px)",
+            fontSize: "clamp(36px, 7vw, 36px)",
             lineHeight: 1.05,
             color: "var(--ink)",
           }}
@@ -49,7 +49,7 @@ export function BookingCTA() {
         {/* Subtext */}
         <p
           style={{
-            fontSize: "11px",
+            fontSize: "12px",
             color: "var(--ink-60)",
             marginTop: "8px",
             letterSpacing: "0.02em",
@@ -71,7 +71,7 @@ export function BookingCTA() {
             color: "var(--ink)",
             fontFamily: "var(--font-sans)",
             fontWeight: 500,
-            fontSize: "10px",
+            fontSize: "12px",
             letterSpacing: "0.16em",
             textTransform: "uppercase",
             border: "none",

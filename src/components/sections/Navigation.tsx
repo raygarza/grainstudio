@@ -50,7 +50,8 @@ export function Navigation() {
                   href={`#${link.toLowerCase().replace(/\s+/g, "-")}`}
                   className="font-serif italic"
                   style={{
-                    fontSize: "15px",
+                    fontSize: "16px",
+                    fontWeight: "600",
                     color: "var(--ink-60)",
                     textDecoration: "none",
                     cursor: "pointer",

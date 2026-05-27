@@ -32,9 +32,10 @@ export function FAQ() {
         `}</style>
         <div className="faq-container">
           {/* LEFT COLUMN */}
-          <div className="faq-left">
+          <div className="faq-left gap-4">
             <SectionLabel>Common Inquiries</SectionLabel>
-            <div
+            <br/>
+            {/* <div
               className="font-serif"
               style={{
                 fontSize: "clamp(36px, 5vw, 52px)",
@@ -47,12 +48,13 @@ export function FAQ() {
             >
               <div>Common</div>
               <div>Inquiries.</div>
-            </div>
+            </div> */}
             <Image
               src="/placeholder-newspaper.jpg"
               alt="Newspaper detail"
               width={340}
               height={260}
+              sizes="(max-width: 768px) 100vw, 340px"
               style={{
                 width: "100%",
                 height: "auto",
@@ -61,6 +63,7 @@ export function FAQ() {
                 opacity: 0.75,
                 marginTop: "8px",
                 marginBottom: "24px",
+                objectFit: "cover",
               }}
             /><div
                     style={{
@@ -74,40 +77,36 @@ export function FAQ() {
           {/* RIGHT COLUMN */}
           <div className="faq-right">
             {FAQS.map((faq, index) => (
-              <div key={index}>
-                {index > 0 && (
-                  <div
-                    style={{
-                      height: "0.5px",
-                      background: "var(--ink-15)",
-                      marginBottom: "24px",
-                    }}
-                  />
-                )}
-                <div style={{ marginBottom: "24px" }}>
-                  <h3
-                    className="font-serif"
-                    style={{
-                      fontSize: "20px",
-                      fontWeight: 600,
-                      color: "var(--ink)",
-                      marginBottom: "12px",
-                    }}
-                  >
-                    {faq.q}
-                  </h3>
-                  <p
-                    className="font-serif"
-                    style={{
-                      fontSize: "16px",
-                      lineHeight: "1.8",
-                      color: "var(--ink-60)",
-                      marginBottom: "0",
-                    }}
-                  >
-                    {faq.a}
-                  </p>
-                </div>
+              <div
+                key={index}
+                style={{
+                  border: "0.5px solid var(--ink-15)",
+                  padding: "24px",
+                  marginBottom: "24px",
+                }}
+              >
+                <h3
+                  className="font-serif"
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: 600,
+                    color: "var(--ink)",
+                    marginBottom: "12px",
+                  }}
+                >
+                  {faq.q}
+                </h3>
+                <p
+                  className="font-serif"
+                  style={{
+                    fontSize: "16px",
+                    lineHeight: "1.8",
+                    color: "var(--ink-60)",
+                    marginBottom: "0",
+                  }}
+                >
+                  {faq.a}
+                </p>
               </div>
             ))}
           </div>

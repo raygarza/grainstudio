@@ -18,7 +18,7 @@ export default function Home() {
         <HeroPitch />
         <Navigation />
         <Services />
-        <Philosophy />
+        {/* <Philosophy /> */}
         <Pricing />
         <FAQ />
         <BookingCTA />
