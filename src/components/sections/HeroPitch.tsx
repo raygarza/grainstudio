@@ -73,8 +73,8 @@ export function HeroPitch() {
                   className="font-serif"
                   style={{
                     fontSize: "18px",
-                    lineHeight: "1.8",
-                    color: "var(--ink)",
+                    lineHeight: "1.4",
+                    color: "var(--ink-60)",
                   }}
                 >
                   "I build websites with an aesthetic emphasis on your business brand's identity - not a template."
