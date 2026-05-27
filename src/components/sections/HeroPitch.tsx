@@ -35,12 +35,14 @@ export function HeroPitch() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: 0 }}
             style={{
-              border: "1px solid var(--ink-30)",
+              // border: "1px solid var(--ink-30)",
+              marginLeft: "-24px",
+              marginRight: "-24px",
             }}
           >
             {/* Portrait Image */}
             <Image
-              src="/placeholder-portrait.jpg"
+              src="/picture-stack.png"
               alt="Ray - Grain Studio"
               width={400}
               height={500}
@@ -48,7 +50,6 @@ export function HeroPitch() {
                 width: "100%",
                 height: "auto",
                 display: "block",
-                filter: "grayscale(100%)",
               }}
             />
 
