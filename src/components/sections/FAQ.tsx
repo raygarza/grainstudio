@@ -65,17 +65,18 @@ export function FAQ() {
                 display: "block",
                 filter: "brightness(0.9)",
                 marginTop: "8px",
-                marginBottom: "24px",
+                marginBottom: "16px",
                 objectFit: "cover",
               }}
-            /><div
+            />
+            {/* <div
                     style={{
                       height: "0.5px",
                       background: "var(--ink-15)",
                       marginBottom: "24px",
                     }}
                   />
-          </div>
+          </div> */}
 
           {/* RIGHT COLUMN */}
           <div className="faq-right">
