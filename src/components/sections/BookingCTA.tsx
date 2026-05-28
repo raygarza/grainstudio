@@ -41,8 +41,8 @@ export function BookingCTA() {
             color: "var(--ink)",
           }}
         >
-          <div>Your Growth Starts Here</div>
-          <div>your website.</div>
+          <div>Your growth starts</div>
+          <div>with your web presence.</div>
         </h2>
 
         {/* Subtext */}
