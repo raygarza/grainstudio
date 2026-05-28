@@ -4,8 +4,7 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 
 export function Pricing() {
   const handleBookCall = () => {
-    // TODO: Replace with actual Cal.com integration when calLink is configured
-    alert("Cal.com booking modal would open here. Update SITE.calLink in constants.ts with your Cal.com username/event.");
+    window.open("https://calendly.com/grainstudio/website-seo-consult", "_blank");
   };
 
   return (
