@@ -69,14 +69,7 @@ export function FAQ() {
                 objectFit: "cover",
               }}
             />
-            {/* <div
-                    style={{
-                      height: "0.5px",
-                      background: "var(--ink-15)",
-                      marginBottom: "24px",
-                    }}
-                  />
-          </div> */}
+          </div>
 
           {/* RIGHT COLUMN */}
           <div className="faq-right">

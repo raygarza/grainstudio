@@ -159,8 +159,8 @@ export function HeroPitch() {
               Your business website should feel like you -{" "}
               <span
                 style={{
-                  background: "linear-gradient(180deg, transparent 60%, var(--burnt) 40%, var(--burnt) 85%, transparent 85%)",
-                  paddingInline: "4px",
+                  fontStyle: "italic",
+                  color: "var(--burnt)",
                 }}
               >
                 not a template
