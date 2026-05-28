@@ -15,6 +15,9 @@ export function FAQ() {
             gap: 48px;
             align-items: flex-start;
           }
+          .faq-left {
+            width: 100%;
+          }
           @media (min-width: 768px) {
             .faq-container {
               flex-direction: row;
@@ -23,6 +26,7 @@ export function FAQ() {
             .faq-left {
               flex: 1 1 0%;
               min-width: 0;
+              width: auto;
             }
             .faq-right {
               flex: 2 1 0%;
@@ -50,7 +54,7 @@ export function FAQ() {
               <div>Inquiries.</div>
             </div> */}
             <Image
-              src="/placeholder-newspaper.jpg"
+              src="/faq-mag-brain.png"
               alt="Newspaper detail"
               width={340}
               height={260}
@@ -59,8 +63,7 @@ export function FAQ() {
                 width: "100%",
                 height: "auto",
                 display: "block",
-                filter: "grayscale(100%) contrast(1.1)",
-                opacity: 0.75,
+                filter: "brightness(0.9)",
                 marginTop: "8px",
                 marginBottom: "24px",
                 objectFit: "cover",
