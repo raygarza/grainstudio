@@ -156,16 +156,15 @@ export function HeroPitch() {
                 color: "var(--ink)",
               }}
             >
-              Your business website should feel like you -{" "}
+              Your business website shouldn't feel like a template {" "}
               <span
                 style={{
                   fontStyle: "italic",
                   color: "var(--burnt)",
                 }}
               >
-                not a template
+                or AI slop..
               </span>
-              .
             </h2>
 
             {/* Byline */}
@@ -177,7 +176,7 @@ export function HeroPitch() {
                 marginTop: "12px",
               }}
             >
-            By Ray Garza  ·  Reading Time: 2 min
+            {/* By Ray Garza  ·  Reading Time: 2 min */}
             </p>
 
             {/* Thin rule */}

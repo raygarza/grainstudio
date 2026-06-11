@@ -77,6 +77,7 @@ export function FAQ() {
               <div
                 key={index}
                 style={{
+                  backgroundColor: "var(--paper)",
                   border: "0.5px solid var(--ink-15)",
                   padding: "24px",
                   marginBottom: "24px",
