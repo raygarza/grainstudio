@@ -163,7 +163,7 @@ export function HeroPitch() {
                   color: "var(--burnt)",
                 }}
               >
-                or AI slop..
+                ..or AI slop
               </span>
             </h2>
 
